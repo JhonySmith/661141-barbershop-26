@@ -74,10 +74,14 @@
   opacity: 0.3;
 }
 
-.main {
+body {
   background-image: url("/img/Layer.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top center;
+  background-color: #000000;
+}
+
+.main {
 }
 
 .logo {
@@ -87,4 +91,157 @@
 
 .logo img {
   margin-top: 60px;
+  margin-bottom: 80px;
+}
+
+.advantages-list {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
+
+.advantages-list li {
+  list-style: none;
+  text-align: center;
+}
+
+.advantages-list b {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "PT Sans Narrow", "Arial", "Helvetica", sans-serif;
+}
+
+.advantages-list p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "PT Sans Narrow", "Arial", "Helvetica", sans-serif;
+  line-height: 24px;
+}
+
+.advantages-item p::before {
+  content: "";
+  display: block;
+  background-color: white;
+  width: 14px;
+  height: 14px;
+  transform: rotate(45deg);
+  margin-bottom: 31px;
+  margin-top: 17px;
+}
+
+.news-and-photos {
+  display: flex;
+  justify-content: space-between;
+  background: url("/img/bg-gradient.png") no-repeat center;
+  padding-bottom: 50px;
+  margin-bottom: 36px;
+}
+
+.main h2 {
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 30px;
+  font-family: "PT Sans Narrow", "Arial", "Helvetica", sans-serif;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  color: black;
+}
+
+.news {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  padding-top: 55px;
+  padding-left: 90px;
+}
+.news-items {
+  padding-left: 0;
+  margin: 0;
+}
+
+.news-items li {
+  list-style: none;
+}
+
+.news-item {
+  margin-top: 18px;
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: "PT Sans Narrow", "Arial", "Helvetica", sans-serif;
+  letter-spacing: 0;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: black;
+}
+
+.news-date {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: "PT Sans Narrow", "Arial", "Helvetica", sans-serif;
+  letter-spacing: 0;
+  line-height: 24px;
+  color: black;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: 700;
+  font-size: 14px;
+  font-family: "PT Sans Narrow", "Arial", "Helvetica", sans-serif;
+  letter-spacing: 0;
+  line-height: 24px;
+  color: white;
+
+  border: none;
+
+  background-color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.btn-news {
+  width: 140px;
+  height: 44px;
+
+  margin-top: 36px;
+}
+
+.btn-back {
+  width: 140px;
+  height: 44px;
+}
+
+.btn-forward {
+  width: 140px;
+  height: 44px;
+}
+
+.navigate-panel {
+  display: flex;
+  justify-content: space-between;
+}
+
+.photos img {
+  border: solid 7px white;
+  margin-top: 30px;
+  margin-bottom: 28px;
+}
+
+.photos {
+  padding-top: 55px;
+  padding-right: 90px;
 }
