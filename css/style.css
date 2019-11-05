@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "PT Sans Narrow";
+  font-weight: 700;
+  font-style: normal;
+  src: url("font/ptsansnarrowbold.woff2") format("woff2"),
+    url("font/ptsansnarrowbold.woff2") format("woff");
+}
+
+.fixed {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.navigation a {
+  font-weight: 700;
+  font-size: 16px;
+  font-family: "PT Sans Narrow", "Arial", "Helvetica", sans-serif;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+
+  height: 72px;
+
+  background-color: black;
+}
+
+.navigation li {
+  list-style: none;
+}
+
+.navigation-menu {
+  display: flex;
+  align-items: center;
+  padding-left: 0%;
+}
+
+.navigation-menu li {
+  margin-left: 30px;
+  margin-right: 10px;
+}
+
+.user-menu {
+  display: flex;
+  align-items: center;
+}
+
+.user-menu {
+  padding-left: 0;
+  margin-right: 32px;
+}
+
+.user-in {
+  display: flex;
+  align-items: center;
+}
+
+.user-in::before {
+  content: "";
+  display: block;
+  background: url("/img/login.svg") no-repeat center;
+  width: 14px;
+  height: 14px;
+  margin-right: 15px;
+  opacity: 0.3;
+}
